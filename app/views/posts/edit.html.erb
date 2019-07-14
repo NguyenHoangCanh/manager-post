@@ -1,0 +1,9 @@
+<h1>Editing Post</h1>
+
+<%= form_for :post, url: {action: :update, controller: :posts}, method: :put do |f| %>
+
+<%= f.label :content %>
+<%= f.text_field :content %>
+<%= f.submit :Update%>
+
+<% end %>
